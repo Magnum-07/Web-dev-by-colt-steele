@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
 </head>
+
 <body>
     <h1>Forms Demo</h1>
+    <form action="/tacos">
+        <p>
+            <label for="username">Username:</label>
+            <input type="text" placeholder="username" id="username" name="username">
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" placeholder="password" id="password" name="password">
+        </p>
+        <p>
+            <label for="color">Select a colour</label>
+            <input type="color" id="color" name="colourChoice">
+        </p>
+        <p>
+            <label for="number">Enter a number:</label>
+            <input type="number" min="0" max="1000" id="number" >
+        </p>
+        <button>Submit this one!</button>
+        <button type="button">Submit</button>
+    </form>
+    <h2>Google Search!</h2>
+    <form action="https://www.google.com/search?">
+        <input type="text" placeholder="Enter here to search to google!" name="q">
+        <button>Submit it!</button>
+    </form>
+    <h2>Reddit Search</h2>
+    <form action="https://www.reddit.com/search?" target="_blank">
+        <input type="text" placeholder="Enter here to search to google!" name="q">
+        <button>Submit it!</button>
+    </form>
+    <h2>More inputs</h2>
+    <form action="/birds">
+        <h3>Will you marry me &#63;</h3>
+        <input type="radio" name="marry" id="yes" value="yes">
+        <label for="yes">Yes</label>
+        <input type="radio" name="marry" id="no" value="no">
+        <label for="no">No</label>
+        <input type="radio" name="marry" id="maybe" value="maybe">
+        <label for="maybe">Maybe</label>
+        <!-- <input type="checkbox" id="yes" name="marriage">
+        <label for="yes">Yes?</label> -->
+        <p>
+            <label for="meal">Please select an entree</label>
+            <select name="meal" id="meal">
+                <option value="fish">Fish</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non_veg" selected>Non-vegetarian</option>
+                <option value="Eggs">Eggs</option>
+            </select>
+        </p>
+        <p>
+            <label for="cheese_volume">Amount of cheese:</label>
+            <input type="range" name="cheese_level" id="cheese_volume" step="7" min="0" max="100">
+        </p>
+        <p>
+            <label for="request">Any special request?</label>
+            <br>
+            <textarea name="Requests?" id="request" cols="30" rows="10" placeholder="Type something here!!"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
 </body>
+
 </html>
