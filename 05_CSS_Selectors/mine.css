@@ -1,0 +1,25 @@
+ul li a {
+    color:#6a040f;
+}
+
+body {
+    background-color: #80ffdb;
+}
+
+footer > a {
+    background-color: gold;
+}
+
+h2 + button {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+h2 + button:hover{
+    background-color: magenta;
+}
+
+.post:nth-of-type(2n) {
+    background-color: #75e6c6;
+}
+

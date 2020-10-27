@@ -1,0 +1,18 @@
+h1  {
+    color: rosybrown;
+    text-align: center;
+    text-decoration: #f409f4 underline dotted;
+    font-size: 200px;
+    text-decoration: ;
+}
+p {
+    font-weight: bold;
+    line-height: 2;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
