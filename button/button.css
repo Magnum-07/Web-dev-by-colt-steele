@@ -1,0 +1,24 @@
+body{
+    background-color: #1d3557;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+button {
+    background:none;
+    color: #ffa260;
+    border:2px solid;
+    font-size: 1em;
+    padding: 1em;
+    transition: all 0.25s;
+}
+
+button:hover{
+    color:white;
+    border-color:#f1ff5c;
+    box-shadow: 0 0.5em 0.5em -0.4em goldenrod;
+    transform: translateY(-5px);
+    cursor: pointer;
+}

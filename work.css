@@ -1,18 +1,53 @@
-h1  {
-    color: rosybrown;
-    text-align: center;
-    text-decoration: #f409f4 underline dotted;
-    font-size: 200px;
-    text-decoration: ;
-}
-p {
-    font-weight: bold;
-    line-height: 2;
+div {
+    width:100px;
+    height:100px;
+    margin: 10px;
+    background-color: cyan;
+    display: inline-block;
 }
 
-a {
-    text-decoration: none;
+#middle {
+    background-color: #1d3557;
 }
-a:hover {
-    text-decoration: underline;
+
+#static #middle {
+    position: static;
+    top:100px;
+}
+
+#relative #middle {
+    position: relative;
+    top:100px;
+    left: 100px;
+}
+
+#absolute {
+    position: relative;
+}
+
+#absolute #middle {
+    position: absolute;
+    top:0;
+    left:0;
+}
+
+#sticky #first {
+    position: -webkit-sticky;
+    position: sticky;
+    top:20px;
+}
+
+#sticky #middle {
+    /* position: -webkit-sticky;
+    position: sticky; */
+    position: relative;
+    left: 50%;
+    right: 50%;
+}
+
+#sticky #last {
+    position: -webkit-sticky;
+    position: sticky;
+    top:20px;
+    left:100%;
 }
