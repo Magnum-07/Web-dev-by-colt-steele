@@ -1,0 +1,11 @@
+div {
+    display: inline-block;
+    text-align: center;
+}
+span {
+    display: block;
+}
+body {
+    width: 80%;
+    margin:0 auto;
+}
